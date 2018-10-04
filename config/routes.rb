@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'top' => 'home#top'
+  get 'about' => 'home#about'
+  get 'rooms/join/search' => 'rooms#search'
+  get 'rooms/new' => 'rooms#new'
+  get 'rooms/:id/select' => 'rooms#select'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

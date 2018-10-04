@@ -1,0 +1,12 @@
+
+ <div class="container">
+
+ <textarea name="name" rows="8" cols="80"></textarea>
+
+   <input type="submit" value="開校">
+   <% @rooms.each do |room| %>
+   <div class="rooms-search-index">
+     <%= room.name %>
+   </div>
+   <% end %>
+ </div>
