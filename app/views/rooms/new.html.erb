@@ -1,2 +1,8 @@
-<h1>Rooms#new</h1>
-<p>Find me in app/views/rooms/new.html.erb</p>
+<div class="container">
+<%= form_tag("/rooms/create") do %>
+  <p>高校名を入力<br>
+  <input class="form input" name="name">
+  <%= "高校"%></p>
+  <input class="btn-default" type="submit" value="開校">
+<% end %>
+</div>

@@ -1,3 +1,68 @@
-<div class="rooms-name">
-  <%= @rooms.name %>
+<div class="container">
+<h2>
+<%= @rooms.name %><%= "高校"%>
+</h2>
+
+<table>
+<tr align="center" bgcolor="#904e17">
+  <td colspan="8"><%= @actress_t.name %><%= "（担任）"%></td>
+</tr>
+<tr align="center" bgcolor="#904e17">
+<td><%= @actress.name %></td>
+<td>
+<%= link_to("選択", "/rooms/#{@rooms.id}/click", :method => "post")  %>
+</td>
+<td><%= @actress1.name %></td>
+<td>
+<%= link_to("選択", "/rooms/#{@rooms.id}/click1", :method => "post")  %>
+</td>
+<td><%= @actress2.name %></td>
+<td>
+<%= link_to("選択", "/rooms/#{@rooms.id}/click2", :method => "post")  %>
+</td>
+<td><%= @actress3.name %></td>
+<td>
+<%= link_to("選択", "/rooms/#{@rooms.id}/click3", :method => "post")  %>
+</td>
+</tr>
+<tr align="center" bgcolor="#904e17">
+<td>
+<%= link_to("選択", "/rooms/#{@rooms.id}/click4", :method => "post")  %>
+</td>
+<td><%= @actress4.name %></td>
+<td>
+<%= link_to("選択", "/rooms/#{@rooms.id}/click5", :method => "post")  %>
+</td>
+<td><%= @actress5.name %></td>
+<td>
+<%= link_to("選択", "/rooms/#{@rooms.id}/click6", :method => "post")  %>
+</td>
+<td><%= @actress6.name %></td>
+<td>
+<%= link_to("選択", "/rooms/#{@rooms.id}/click7", :method => "post")  %>
+</td>
+<td><%= @actress7.name %></td>
+</tr>
+<tr align="center" bgcolor="#904e17">
+<td><%= @actress8.name %></td>
+<td>
+<%= link_to("選択", "/rooms/#{@rooms.id}/click8", :method => "post")  %>
+</td>
+<td><%= @actress9.name %></td>
+<td>
+<%= link_to("選択", "/rooms/#{@rooms.id}/click9", :method => "post")  %>
+</td>
+<td><%= @actress10.name %></td>
+<td>
+<%= link_to("選択", "/rooms/#{@rooms.id}/click10", :method => "post")  %>
+</td>
+<td><%= @actress11.name %></td>
+<td>
+<%= link_to("選択", "/rooms/#{@rooms.id}/click11", :method => "post")  %>
+</td>
+</tr>
+<tr align="center" bgcolor="#904e17">
+    <td colspan="8"><%= @actress_pe.name %><%= "（保健の先生）"%></td>
+  </tr>
+</table>
 </div>

@@ -1,0 +1,25 @@
+<div class="container">
+<%= form_tag("registration/register",{multipart: true}) do %>
+  <p>――――― 名前を入力 ―――――<br>
+  <input class="form input" name="name">
+  </p>
+  <p>―――― カテゴリを入力 ――――<br>
+    <select name="category" size="1">
+<option value="生徒">生徒</option>
+<option value="担任">担任</option>
+<option value="保健の先生">保健の先生</option>
+</select>
+  </p>
+<p>―――――― 画像 ――――――<br>
+  ＜右＞
+  <input name="image" type="file">
+  ＜左＞
+  <input name="image1" type="file">
+  ＜前＞
+  <input name="image2" type="file">
+  ＜後＞
+  <input name="image3" type="file">
+</p>
+  <input class="btn-default" type="submit" value="登録">
+<% end %>
+</div>

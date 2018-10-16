@@ -1,12 +1,19 @@
-
  <div class="container">
-
- <textarea name="name" rows="8" cols="80"></textarea>
-
-   <input type="submit" value="開校">
-   <% @rooms.each do |room| %>
-   <div class="rooms-search-index">
-     <%= room.name %>
-   </div>
+   <p>高校名を入力<br></p>
+   <h4>
+     <%= form_tag("/rooms/find",:method => 'get') do %>
+    <%= text_field_tag :search %>
+    <%= submit_tag '検索', :name => nil %>
    <% end %>
+   </h4>
+
+   <% @rooms.each do |room| %>
+   <div class="well">
+   <ul>
+     <li><%= room.name %><%= "高校"%>
+     <%= link_to("入学","/rooms/#{room.id}/select")%>
+     </li>
+   </ul>
  </div>
+   <% end %>
+</div>

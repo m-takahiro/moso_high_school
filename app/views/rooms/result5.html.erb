@@ -1,0 +1,72 @@
+<div class="container">
+<h2>
+<%= @rooms.name %><%= "高校"%>
+</h2>
+
+<table>
+<tr align="center" bgcolor="#904e17">
+  <td colspan="8"><%= @actress_t.name %></td>
+</tr>
+<tr align="center" bgcolor="#904e17">
+<td><%= @actress.name %></td>
+<td></td>
+<td><%= @actress1.name %></td>
+<td></td>
+<td><%= @actress2.name %></td>
+<td></td>
+<td><%= @actress3.name %></td>
+<td></td>
+</tr>
+<tr align="center" bgcolor="#904e17">
+<td></td>
+<td><%= @actress4.name %></td>
+<td bgcolor="#59c81d"><%= "あなたの席"%></td>
+<td><%= @actress5.name %></td>
+<td></td>
+<td><%= @actress6.name %></td>
+<td></td>
+<td><%= @actress7.name %></td>
+</tr>
+<tr align="center" bgcolor="#904e17">
+<td><%= @actress8.name %></td>
+<td></td>
+<td><%= @actress9.name %></td>
+<td></td>
+<td><%= @actress10.name %></td>
+<td></td>
+<td><%= @actress11.name %></td>
+<td></td>
+</tr>
+<tr align="center" bgcolor="#904e17">
+    <td colspan="8"><%= @actress_pe.name %></td>
+  </tr>
+</table>
+</tr>
+</table>
+<%= form_tag("/rooms/#{@rooms.id}/destroy5") do %>
+<button type="submit" class="btn btn-primary btn-lg btn-block" value="destroy">離席する</button>
+<% end %>
+<!-- ＝＝写真表示＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ -->
+<a href="<%= "/actress_photos/#{@actress5.image_right_name}"%>" data-lightbox="image">
+  <img src="/right.png" alt="サムネ" class="thumbnail">
+</a>
+<a href="<%= "/actress_photos/#{@actress4.image_left_name}"%>" data-lightbox="image1">
+  <img src="/left.png" alt="サムネ" class="thumbnail">
+</a>
+<a href="<%= "/actress_photos/#{@actress2.image_front_name}"%>" data-lightbox="image2">
+  <img src="/front.png" alt="サムネ" class="thumbnail">
+</a>
+<a href="<%= "/actress_photos/#{@actress9.image_back_name}"%>" data-lightbox="image3">
+  <img src="/back.png" alt="サムネ" class="thumbnail">
+</a>
+
+<!-- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ -->
+<!-- ＝＝Shareボタン＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ -->
+ <a href="https://twitter.com/share?url=<%= "http://localhost:3000/top" %>&text=<%= "私立妄想高校" %>" rel="nofollow" target="_blank">
+   <img src ="/Twitter_Social_Icon_Rounded_Square_Color.png" width="60">
+ </a>
+ <a href="https://timeline.line.me/social-plugin/share?url=http%3a%2f%2flocalhost%3a3000%2ftop">
+   <img src ="/LINE_APP_typeA.png" width="60">
+ </a>
+<!-- ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ -->
+</div>

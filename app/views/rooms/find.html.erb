@@ -1,0 +1,14 @@
+<div class="container">
+ <p>この高校でよろしいですか？</p>
+ <% @rooms.each do |room| %>
+  <div class="well">
+   <ul>
+
+     <li>
+     <%= room.name %><%= "高校" %><br>
+     <%= link_to("入学","/rooms/#{room.id}/select")%>
+     </li>
+   </ul>
+  </div>
+ <% end %>
+</div>
