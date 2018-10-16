@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'registration/form'
-
   get 'top' => 'home#top'
   get 'about' => 'home#about'
 

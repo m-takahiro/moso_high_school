@@ -296,6 +296,8 @@ select{
 //検索ボタンのフォントカラー
 h4{
   color:rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: large;
 }
 //インデックス表示、検索結果表示について
 .well{
@@ -320,6 +322,10 @@ p{
   font-weight: bold;
   font-size: x-large;
 }
+.warning{
+  color:rgb(199, 5, 5);
+  font-size: small;
+}
 //サムネイル画像の調整
 .thumbnail{
   margin-left: auto;
@@ -330,7 +336,18 @@ p{
   float: left;
   border: none;
 }
-
+//Aboutページの本文クラス
+.text{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 600px;
+  padding: 2px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: small;
+}
 //-ここからProgateのテンプレ----------------------------------------------------------------------------------------------------------------------
 
 /* フラッシュ ================================ */

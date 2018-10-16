@@ -1,8 +1,11 @@
 <div class="container">
-<%= form_tag("/rooms/create") do %>
-  <p>高校名を入力<br>
-  <input class="form input" name="name">
-  <%= "高校"%></p>
-  <input class="btn-default" type="submit" value="開校">
-<% end %>
+  <% if @error_message %>
+  <p class="warning"><%= @error_message %></p>
+  <% end %>
+    <%= form_tag("/rooms/create") do %>
+      <p>高校名を入力<br>
+      <input class="form input" name="name">
+      <%= "高校"%></p>
+      <input class="btn-default" type="submit" value="開校">
+    <% end %>
 </div>

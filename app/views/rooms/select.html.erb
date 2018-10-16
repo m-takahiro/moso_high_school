@@ -10,55 +10,103 @@
 <tr align="center" bgcolor="#904e17">
 <td><%= @actress.name %></td>
 <td>
+  <% if @rooms.seat_1_2 == 1  %>
+  <h2>✕</h2>
+  <% else %>
 <%= link_to("選択", "/rooms/#{@rooms.id}/click", :method => "post")  %>
+  <% end %>
 </td>
 <td><%= @actress1.name %></td>
 <td>
+  <% if @rooms.seat_1_4 == 1  %>
+  <h2>✕</h2>
+  <% else %>
 <%= link_to("選択", "/rooms/#{@rooms.id}/click1", :method => "post")  %>
+<% end %>
 </td>
 <td><%= @actress2.name %></td>
 <td>
+  <% if @rooms.seat_1_6 == 1  %>
+  <h2>✕</h2>
+  <% else %>
 <%= link_to("選択", "/rooms/#{@rooms.id}/click2", :method => "post")  %>
+<% end %>
 </td>
 <td><%= @actress3.name %></td>
 <td>
+  <% if @rooms.seat_1_8 == 1  %>
+  <h2>✕</h2>
+  <% else %>
 <%= link_to("選択", "/rooms/#{@rooms.id}/click3", :method => "post")  %>
+<% end %>
 </td>
 </tr>
 <tr align="center" bgcolor="#904e17">
 <td>
+  <% if @rooms.seat_2_1 == 1  %>
+  <h2>✕</h2>
+  <% else %>
 <%= link_to("選択", "/rooms/#{@rooms.id}/click4", :method => "post")  %>
+<% end %>
 </td>
 <td><%= @actress4.name %></td>
 <td>
+  <% if @rooms.seat_2_3 == 1  %>
+  <h2>✕</h2>
+  <% else %>
 <%= link_to("選択", "/rooms/#{@rooms.id}/click5", :method => "post")  %>
 </td>
+<% end %>
 <td><%= @actress5.name %></td>
 <td>
+  <% if @rooms.seat_2_5 == 1  %>
+  <h2>✕</h2>
+  <% else %>
 <%= link_to("選択", "/rooms/#{@rooms.id}/click6", :method => "post")  %>
+<% end %>
 </td>
 <td><%= @actress6.name %></td>
 <td>
+  <% if @rooms.seat_2_7 == 1  %>
+  <h2>✕</h2>
+  <% else %>
 <%= link_to("選択", "/rooms/#{@rooms.id}/click7", :method => "post")  %>
+<% end %>
 </td>
 <td><%= @actress7.name %></td>
 </tr>
 <tr align="center" bgcolor="#904e17">
 <td><%= @actress8.name %></td>
 <td>
+  <% if @rooms.seat_3_2 == 1  %>
+  <h2>✕</h2>
+  <% else %>
 <%= link_to("選択", "/rooms/#{@rooms.id}/click8", :method => "post")  %>
+<% end %>
 </td>
 <td><%= @actress9.name %></td>
 <td>
+  <% if @rooms.seat_3_4 == 1  %>
+  <h2>✕</h2>
+  <% else %>
 <%= link_to("選択", "/rooms/#{@rooms.id}/click9", :method => "post")  %>
+<% end %>
 </td>
 <td><%= @actress10.name %></td>
 <td>
+  <% if @rooms.seat_3_6 == 1  %>
+  <h2>✕</h2>
+  <% else %>
 <%= link_to("選択", "/rooms/#{@rooms.id}/click10", :method => "post")  %>
+<% end %>
 </td>
 <td><%= @actress11.name %></td>
 <td>
+  <% if @rooms.seat_3_8 == 1  %>
+  <h2>✕</h2>
+  <% else %>
 <%= link_to("選択", "/rooms/#{@rooms.id}/click11", :method => "post")  %>
+<% end %>
 </td>
 </tr>
 <tr align="center" bgcolor="#904e17">

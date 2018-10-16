@@ -1,5 +1,8 @@
 <div class="container">
-<%= form_tag("registration/register",{multipart: true}) do %>
+  <% if @error_message %>
+  <p class="warning"><%= @error_message %></p>
+  <% end %>
+<%= form_tag("/registration/register",{multipart: true}) do %>
   <p>――――― 名前を入力 ―――――<br>
   <input class="form input" name="name">
   </p>

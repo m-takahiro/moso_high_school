@@ -19,9 +19,13 @@ class RoomsController < ApplicationController
         seat_3_1: @actress_ids[8], seat_3_3: @actress_ids[9], seat_3_5: @actress_ids[10], seat_3_7: @actress_ids[11],
         seat_4_1: @actress_pe_ids[0]
       )
+    if @room.save
         session[:room_id] = @room.id
         redirect_to("/rooms/#{@room.id}/select")
-
+    else
+      @error_message = "その名前では開校できません"
+      render("/rooms/new")
+    end
   end
   def select
     # render :layout => nil
