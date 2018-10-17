@@ -87,6 +87,9 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
   database: moso_high_school_production
   username: moso_high_school
   password: <%= ENV['MOSO_HIGH_SCHOOL_DATABASE_PASSWORD'] %>
