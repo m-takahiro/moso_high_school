@@ -216,7 +216,7 @@
 // }
 //背景の指定
 body{
-  background-color: rgb(241, 216, 159);
+  background-image: url("/p0244_l.jpeg");
 }
 //ジャンボトロン内の指定
 .jumbotron-fluid{
@@ -260,6 +260,7 @@ a{
   margin-left: auto;
   margin-right: auto;
 }
+
 //ボタンの指定　色：#d245d4
 button{
   margin-top:10px;
@@ -336,7 +337,11 @@ p{
   float: left;
   border: none;
 }
-//Aboutページの本文クラス
+.thumbnail:hover{
+  opacity: 0.5;
+}
+
+//Aboutページのクラス
 .text{
   margin-left: auto;
   margin-right: auto;
@@ -348,6 +353,14 @@ p{
   color: rgba(255, 255, 255, 0.75);
   font-size: small;
 }
+.about_image{
+  max-height: 200px
+}
+//naviの設定
+.nav-item{
+  color: rgb(59, 32, 2);
+}
+
 //-ここからProgateのテンプレ----------------------------------------------------------------------------------------------------------------------
 
 /* フラッシュ ================================ */
