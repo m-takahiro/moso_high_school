@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dk6hy3j48
+  api_key: '383176972593769'
+  api_secret: 1_NEcHjqBJb1CGzzUpQU0o46N6E
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dk6hy3j48
+  api_key: '383176972593769'
+  api_secret: 1_NEcHjqBJb1CGzzUpQU0o46N6E
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dk6hy3j48
+  api_key: '383176972593769'
+  api_secret: 1_NEcHjqBJb1CGzzUpQU0o46N6E
+  enhance_image_tag: true
+  static_image_support: false
